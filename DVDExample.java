@@ -7,10 +7,19 @@ public class DVDExample {
         // creating an array that will store DVDs
         DVD[] dvdCollection = new DVD[15];
 
-        DVD[] array = new DVD[6];
+        int[] array = new int[6];
 
         int capacity = array.length;
-        System.out.println("The Array capacity is : " + capacity);
+        int length = 0;
+        for (int j = 0; j < 3; j++) {
+            array[j] = j * j;
+            length++;
+        }
+
+        System.out.println("The Arrays has a capacity of : " + array.length);;
+        System.out.println("The Array has a length of : " + length);
+
+        // System.out.println("The Array capacity is : " + capacity);
 
         // Adding a DVD to the collection
         dvdCollection[0] = new DVD("Inception", 2010, "Christopher Nolan");
