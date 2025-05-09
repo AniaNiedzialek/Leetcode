@@ -3,6 +3,8 @@ public class array2 {
         // Create an instance of the square class
         square squareInstance = new square();
 
+        
+
         // Display the square values
         System.out.println("Square values:");
         for (int value : squareInstance.squareNumbers) {
