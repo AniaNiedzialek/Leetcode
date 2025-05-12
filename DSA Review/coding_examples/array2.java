@@ -1,3 +1,4 @@
+package coding_examples;
 public class array2 {
     public static void main(String[] args) {
         // Create an instance of the square class

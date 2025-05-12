@@ -1,3 +1,4 @@
+package coding_examples;
 // Leetcode Array prctice codes for Java
 // This is a simple example of how to create an array of DVD objects in Java
 

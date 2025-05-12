@@ -1,3 +1,4 @@
+package coding_examples;
 import java.util.Scanner;
 
 class Solution1 {
