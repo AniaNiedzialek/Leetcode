@@ -11,3 +11,6 @@ class Solution:
                     return result  # Optional: return early when found
         return result
 # to run:
+solution = Solution()
+nums = [2,7,11,3,4]
+print(solution.twoSum(nums))  # Output: [0,1]
