@@ -27,3 +27,5 @@ class Solution:
 
 # to run:
 solution = Solution()
+s = "kayak"
+print(solution.Palindrome(s))  # Output: True
