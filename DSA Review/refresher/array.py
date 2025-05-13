@@ -26,3 +26,7 @@ if 6 in A:
     print("6 is in A")
 elif 1 in A:
     print("1 is in A")
+    
+# check the length of the array - O(1)!
+# Python stores length as a property for the lookup so it is O(1)
+print(len(A))  # 5 
