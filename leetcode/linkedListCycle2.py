@@ -55,3 +55,14 @@ node2.next = node3
 print(f"The result now is: ", solution.hasCycle(head2))
 
 
+head3 = ListNode(3)
+node2 = ListNode(2)
+node3 = ListNode(0)
+node4 = ListNode(-5)
+
+head.next = node2
+node2.next = node3
+node3.next = node2
+
+print(f"And this one is: ", solution.hasCycle(head3)) # it still includes a cycle
+
