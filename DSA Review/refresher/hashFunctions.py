@@ -24,3 +24,15 @@ if 1 not in s:
 
 s.remove(1)
 print(s)
+
+string ='aaaaaaaaaaaabbbbbbbbbbccccccccceeeeeeeeeee'
+sett = set(string) # will take O(S) time and only include unique characters
+print(sett)
+
+
+# loop htrough the elements of the set takes on average O(n) time
+for i in s:
+    print(i)
+    
+
+
