@@ -1,3 +1,8 @@
+# The following code includes the alternative solution to the 141. question
+# It does not involve the Floyd's Cycle Detection algorithm but uses a stack 
+# to keep track of the visited nodes
+
+
 from typing import Optional
 
 class ListNode:
