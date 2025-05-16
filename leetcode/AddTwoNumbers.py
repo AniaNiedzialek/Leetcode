@@ -67,8 +67,24 @@ def print_linked_list(head):
 # Test case 1: 342 + 465 = 807
 l1 = create_linked_list([2, 4, 3])  # Represents 342
 l2 = create_linked_list([5, 6, 4])  # Represents 465
+
+curr = l1
+curr2 = l2
+
+while curr:
+    print(curr.val, end=" -> ")
+    curr = curr.next
+print("None")
+
+while curr2:
+    print(curr2.val, end=" -> ")
+    curr2 = curr2.next
+print("None")
+
 solution = Solution()
 result = solution.addTwoNumbers(l1, l2)
+
+
 print("Test Case 1:")
 print_linked_list(result)  # Expected Output: 7 -> 0 -> 8
 
