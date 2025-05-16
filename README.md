@@ -2,7 +2,7 @@
 
 Welcome to my Leetcode practice repository!
 
-This repo contains my personal solutions to coding problems from [Leetcode](https://leetcode.com/), aimed at strengthening my problem-solving skills and preparing for technical interviews.
+This repo contains my personal solutions to coding problems from *Leetcode*, aimed at strengthening my problem-solving skills and preparing for technical interviews.
 
 ##  About
 
