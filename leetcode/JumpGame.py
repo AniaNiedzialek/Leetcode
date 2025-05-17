@@ -1,3 +1,12 @@
+# examples of testings:
+# def foo(a: int, b: int) -> int:
+#     return {'a': 1, 'b': 2}
+
+# print(f"{foo(a=3, b=2)} should be {{'a': 1, 'b': 2}}")
+# print(f"{foo(a=4, b=3)} should be {7}")
+# print(f"{foo(a=10, b=0)} should be {10}")
+# print(f"{foo(a=1, b=19)} should be {20}")
+
 from typing import List
 
 
@@ -20,6 +29,7 @@ class Solution:
             position += 1
 
         return False
+
 
 
 if __name__ == "__main__":
