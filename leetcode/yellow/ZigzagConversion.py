@@ -30,3 +30,14 @@ if __name__ == '__main__':
     s = "PAYPALISHIRING"
     numRows = 3
     print(solution.convert(s, numRows))
+    
+     # Test Case 2
+    s1 = "PAYPALISHIRING"
+    numRows1 = 4
+    print(solution.convert(s1, numRows1))
+    
+    # Test Case 3
+    s2 = "A"
+    numRows2 = 1
+    print(solution.convert(s2, numRows2))
+    
