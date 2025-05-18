@@ -18,7 +18,7 @@ class Solution:
 #         return ' '.join(s.split()[::-1])
 
 
-# if __name__ =='__main__':
+
 solution = Solution()
 s = "the sky is blue"
 print(f"Reversed words are: ", solution.reverseWords(s))
