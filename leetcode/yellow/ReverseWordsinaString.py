@@ -12,14 +12,19 @@ class Solution:
         # print(reverse)
         return ' '.join(reverse)
 
+# All combined in one return line
+# class Solution:
+#     def reverseWords(self, s: str) -> str:
+#         return ' '.join(s.split()[::-1])
 
-if __name__ =='__main__':
-    solution = Solution()
-    s = "the sky is blue"
-    print(f"Reversed words are: ", solution.reverseWords(s))
-    
-    s = "   hello world   "
-    print(f"Reversed words are: ", solution.reverseWords(s))
-    
-    s ="    Ania: 'hi, i solved another Leetcode question !   "
-    print(f"Reversed words are: ", solution.reverseWords(s))
+
+# if __name__ =='__main__':
+solution = Solution()
+s = "the sky is blue"
+print(f"Reversed words are: ", solution.reverseWords(s))
+
+s = "   hello world   "
+print(f"Reversed words are: ", solution.reverseWords(s))
+
+s ="    Ania: 'hi, i solved another Leetcode question !   "
+print(f"Reversed words are: ", solution.reverseWords(s))
