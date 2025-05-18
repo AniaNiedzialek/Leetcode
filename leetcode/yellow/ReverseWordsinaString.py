@@ -17,3 +17,6 @@ if __name__ =='__main__':
     solution = Solution()
     s = "the sky is blue"
     print(f"Reversed words are: ", solution.reverseWords(s))
+    
+    s = "   hello world   "
+    print(f"Reversed words are: ", solution.reverseWords(s))
