@@ -20,3 +20,6 @@ if __name__ =='__main__':
     
     s = "   hello world   "
     print(f"Reversed words are: ", solution.reverseWords(s))
+    
+    s ="    Ania: 'hi, i solved another Leetcode question !   "
+    print(f"Reversed words are: ", solution.reverseWords(s))
