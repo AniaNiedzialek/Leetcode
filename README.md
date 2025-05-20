@@ -3,6 +3,7 @@
 Welcome to my Leetcode practice repository!
 
 This repo contains my personal solutions to coding problems from *Leetcode*, aimed at strengthening my problem-solving skills and preparing for technical interviews.
+New addition: Currently working on the website with my notes and comments for each Leetcode questions!
 
 ##  About
 
