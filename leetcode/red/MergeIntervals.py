@@ -30,3 +30,5 @@ intervals = [[1,4],[4,5]]
 print(solution.merge(intervals))
 intervals = [[1,4],[0,0]]
 print(solution.merge(intervals))
+intervals = [[1,3], [2,6] ,[8,10] ,[8,9], [9,11],[15,18], [2,4] ,[16,17]]
+print(solution.merge(intervals))
