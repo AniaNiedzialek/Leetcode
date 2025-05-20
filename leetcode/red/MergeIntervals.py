@@ -18,6 +18,8 @@ class Solution:
                 # add the interval
                 merged.append(interval)
             else:
+                # we have overlap - modify the overlap that starts at the same spot, and the end point is the max 
+                # of what we currently have
                 merged[-1] = [merged[-1][0], max(merged[-1][1], interval[1])]
         return merged
             
