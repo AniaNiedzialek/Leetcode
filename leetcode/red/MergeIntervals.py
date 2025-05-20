@@ -8,10 +8,14 @@ class Solution:
       
 
         # sort by the starting point with key
+        # lambda function tells how to sort, sorting the intervals by the first point ascending
         intervals.sort(key = lambda interval: interval[0])
      
+        
         for interval in intervals:
+            # if we haven't merged any or the intervals does not overlap (if we end before the next one start)
             if not merged or merged[-1][1] < interval [0]:
+                # add the interval
                 merged.append(interval)
             else:
                 merged[-1] = [merged[-1][0], max(merged[-1][1], interval[1])]
