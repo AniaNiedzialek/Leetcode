@@ -18,8 +18,10 @@ class Solution:
             temp.append(c)
             max_count = max(max_count, len(temp))
                 
-      
+
         return max_count
 
 
-    
+solution = Solution()
+s = "abcabcbb"
+print(solution.lengthOfLongestSubstring(s))
