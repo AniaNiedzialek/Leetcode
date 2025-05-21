@@ -24,4 +24,8 @@ class Solution:
 
 solution = Solution()
 s = "abcabcbb"
+print(solution.lengthOfLongestSubstring(s)) 
+s = "bbbb"
+print(solution.lengthOfLongestSubstring(s))
+s = "pwwkew"
 print(solution.lengthOfLongestSubstring(s))
