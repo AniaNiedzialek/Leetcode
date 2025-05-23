@@ -42,3 +42,29 @@ print(binary_search(A, 0))
 print(binary_search(A, -10))
 print(binary_search(A, 4))
 print(binary_search(A, -100))
+
+# Other technique
+# Based on the condition
+
+# [F,F, F, F, T, T, T, T]
+
+B =[False, False, False, False, True, True, True]
+def binary_search_condition(arr):
+    N = len(arr)
+    L =0
+    R =N - 1
+    while L < R:
+        # we need to force it to escape at some point
+        M = (L + R) // 2
+        
+        # check the conditions
+        if B[M]:
+            R = M
+        else:
+            L = M + 1
+            
+    # return L or R
+    
+    return L 
+
+print(binary_search_condition(B))
