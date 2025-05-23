@@ -56,13 +56,48 @@ def pre_order(node):
 # print(in_order(A))
 
 # Post order traversal
-def post_order(node):
-    if not node:
-        return
+# def post_order(node):
+#     if not node:
+#         return
 
-    post_order(node.left)
+#     post_order(node.left)
     
-    post_order(node.right)
-    print(node)
-print(post_order(A))
+#     post_order(node.right)
+#     print(node)
+# print(post_order(A))
 
+
+
+# Level Order traversal bfs - time and space o(N)
+
+from collections import deque
+
+
+def level_order(node):
+    q = deque()
+    
+    q.append(node)
+    
+    while q:
+        node = q.popleft()
+        print(node)
+        if node.left:
+            q.append(node.left)
+            if node.right: 
+                q.append(node.right)
+                
+print(level_order(A))
+    
+# check if the value exists dfs time and space o(N)
+
+def search(node, target):
+    if not node:
+        return False
+    
+    if node.val == target:
+        return True
+    
+    return search(node.left, target) or search(node.right, target)
+
+print(search(A, 6))
+        
