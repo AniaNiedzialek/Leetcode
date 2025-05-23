@@ -37,14 +37,15 @@ B.next = C
 print(Head)
     
 # Linkedlists are recursive
-def reverse(node):
+def reverse(node, result=None):
+    if result is None:
+        result = []
     if not node:
-        return
-    
-    # reverse the list before printing
-    reverse(node.next)
-    
-    # print(node)
-    
-    print(reverse(Head))
+        return result
+    reverse(node.next, result)
+    result.append(str(node.val))
+    return result
+
+reversed_values = reverse(Head)
+print(" -> ".join(reversed_values))  # Output: 7 -> 4 -> 3 -> 1
     
