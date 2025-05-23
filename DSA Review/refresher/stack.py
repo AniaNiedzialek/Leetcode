@@ -1,4 +1,4 @@
-# Stacks
+# Stacks - LIFO policy
 stk = []
 print(stk)
 
@@ -20,4 +20,4 @@ print(stk[-1])
 
 # ask if something is in the stack - O(1)
 if stk:
-    print(True)
+    print(True) 
