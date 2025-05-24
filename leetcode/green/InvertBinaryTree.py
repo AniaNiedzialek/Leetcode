@@ -20,6 +20,36 @@ class Solution:
         return root
     
 # test cases:
+
+# ...existing code...
+
+def print_level_order(root):
+    if not root:
+        print("[]")
+        return
+    from collections import deque
+    queue = deque([root])
+    result = []
+    while queue:
+        node = queue.popleft()
+        if node:
+            result.append(node.val)
+            queue.append(node.left)
+            queue.append(node.right)
+        else:
+            result.append(None)
+    # Remove trailing None values
+    while result and result[-1] is None:
+        result.pop()
+    print(result)
+
 solution = Solution()
 root = TreeNode(1, TreeNode(2), TreeNode(3))
-print(solution.invertTree(root))
+print("Original tree:")
+print_level_order(root)
+inverted = solution.invertTree(root)
+print("Inverted tree:")
+print_level_order(inverted)
+# solution = Solution()
+# root = TreeNode(1, TreeNode(2), TreeNode(3))
+# print(solution.invertTree(root))
