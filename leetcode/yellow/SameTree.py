@@ -24,6 +24,8 @@ class Solution:
         
         return balances(p, q)
     
+    
+    
 solution = Solution()
 
 # Test case 1: Both trees are empty
@@ -48,3 +50,14 @@ print("Test case 3 (single node, different value):", solution.isSameTree(p3, q3)
 p4 = TreeNode(1, TreeNode(2), TreeNode(3))
 q4 = TreeNode(1, TreeNode(2), TreeNode(3))
 print("Test case 4 (same structure and values):", solution.isSameTree(p4, q4))  # Expected: True
+
+# Test case 5: Trees with different structure
+
+#    4
+#   / \
+#  4   5
+# /
+#6
+p5 = TreeNode(4, TreeNode(4), TreeNode(5))
+q5 = TreeNode(4, TreeNode(4, TreeNode(5)), TreeNode(6))
+print("Test case 4 (same structure and values):", solution.isSameTree(p5, q5))  # Expected: False
