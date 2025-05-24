@@ -18,3 +18,8 @@ class Solution:
         self.invertTree(root.right)
         
         return root
+    
+# test cases:
+solution = Solution()
+root = TreeNode(1, TreeNode(2), TreeNode(3))
+print(solution.invertTree(root))
