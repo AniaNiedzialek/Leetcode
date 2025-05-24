@@ -39,3 +39,25 @@ root3.left = TreeNode(2)
 root3.right = TreeNode(3)
 root3.left.left = TreeNode(4)
 print("Test case 3 (balanced):", solution.maxDepth(root3))  # Expected: 3
+
+# Test case 4: Unbalanced tree
+    #      1
+    #     /
+    #    2
+    #   /
+    #  3
+root4 = TreeNode(1)
+root4.left = TreeNode(2)
+root4.left.left = TreeNode(3)
+print("Test case 4 (unbalanced):", solution.maxDepth(root4))  # Expected: 3
+
+# Test case 5: Right-skewed tree
+# 1
+#  \
+#   2
+#    \
+#     3
+root5 = TreeNode(1)
+root5.right = TreeNode(2)
+root5.right.right = TreeNode(3)
+print("Test case 5 (right-skewed):", solution.maxDepth(root5))  # Expected: 3
