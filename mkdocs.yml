@@ -1,0 +1,10 @@
+site_name: My Leetcode Notes
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Arrays:
+    - Two SUm: arrays/two_sum.md
+  - Dynamic Programming:
+    - House Robber: dp/house_robber.md
