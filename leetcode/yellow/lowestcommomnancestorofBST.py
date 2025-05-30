@@ -34,4 +34,4 @@ if __name__ == "__main__":
     p = root.left
     q = root.right
     solution = Solution()
-    print(solution.lowestCommonAncestor(root, p, q).val)  # Output: 6
+    print("Test Case 1:", solution.lowestCommonAncestor(root, p, q).val)  # Output: 6
