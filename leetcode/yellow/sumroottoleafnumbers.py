@@ -30,3 +30,33 @@ class Solution:
         dfs(root, 0, result)
         total = sum(result)
         return total
+# ...existing code...
+
+if __name__ == "__main__":
+    solution = Solution()
+
+    # Test case 1: Example tree
+    #     1
+    #    / \
+    #   2   3
+    # Numbers: 12, 13 => sum = 25
+    root1 = TreeNode(1, TreeNode(2), TreeNode(3))
+    print("Test case 1:", solution.sumNumbers(root1))  # Expected: 25
+
+    # Test case 2: Tree with more levels
+    #      4
+    #     / \
+    #    9   0
+    #   / \
+    #  5   1
+    # Numbers: 495, 491, 40 => sum = 495 + 491 + 40 = 1026
+    root2 = TreeNode(4, TreeNode(9, TreeNode(5), TreeNode(1)), TreeNode(0))
+    print("Test case 2:", solution.sumNumbers(root2))  # Expected: 1026
+
+    # Test case 3: Single node
+    root3 = TreeNode(7)
+    print("Test case 3:", solution.sumNumbers(root3))  # Expected: 7
+
+    # Test case 4: Empty tree
+    root4 = None
+    print("Test case 4:", solution.sumNumbers(root4))  # Expected: 0
