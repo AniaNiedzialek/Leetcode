@@ -26,3 +26,12 @@ class Solution:
             return root
         else:
             return left or right
+if __name__ == "__main__":
+    root = TreeNode(1)
+    root.left = TreeNode(2)
+    root.right = TreeNode(3)
+    p = root.left
+    q = root.right
+    solution = Solution()
+    print("Test Case 1:", solution.lowestCommonAncestor(root, p, q).val)  # Expected: 1
+    
