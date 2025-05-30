@@ -35,3 +35,17 @@ if __name__ == "__main__":
     solution = Solution()
     print("Test Case 1:", solution.lowestCommonAncestor(root, p, q).val)  # Expected: 1
     
+    # test case 2
+    root = TreeNode(3)
+    root.left = TreeNode(5)
+    root.right = TreeNode(1)
+    root.left.left = TreeNode(6)
+    root.left.right = TreeNode(2)
+    root.left.right.left = TreeNode(7)
+    root.right.left = TreeNode(0)
+    root.right.right = TreeNode(8)  
+    p = root.left  # 5
+    q = root.left.right.right  # 7  \
+    solution = Solution()
+    print("Test Case 2:", solution.lowestCommonAncestor(root, p, q).val)  # Expected: 5
+    
