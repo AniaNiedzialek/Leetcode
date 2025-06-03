@@ -1,4 +1,5 @@
 from typing import Optional, List
+import collections
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -32,3 +33,21 @@ class Solution:
 
             res.append(store)
         return res
+    
+ 
+ # ...existing code...
+
+if __name__ == "__main__":
+    # Example tree:
+    #     1
+    #    / \
+    #   2   3
+    #  / \   \
+    # 4   5   6
+    root = TreeNode(1)
+    root.left = TreeNode(2, TreeNode(4), TreeNode(5))
+    root.right = TreeNode(3, None, TreeNode(6))
+
+    solution = Solution()
+    print("Zigzag Level Order Traversal:")
+    print(solution.zigzagLevelOrder(root))  # Expected: [[1], [3, 2], [4, 5, 6]]   
