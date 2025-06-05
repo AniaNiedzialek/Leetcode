@@ -36,4 +36,13 @@ def heapsort(arr):
     return new_list
 
 A = ([1,3,5,7,9,2,4,6,8,0])
-print("Sorted array using heapsort:", heapsort(A))
+print("Sorted array using heap sort:", heapsort(A))
+
+# heap push pop: time: O(log n), space: O(1)
+# heapq.heappushpop(A,99)
+A = [-4, 3, 1, 0, 2, 5, 10, 8, 12, 9]
+
+print(heapq.heappushpop(A,99))
+
+# for max heap you need to invert the values
+# A = [-x for x in A]  # invert the values
