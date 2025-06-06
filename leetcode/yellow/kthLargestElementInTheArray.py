@@ -26,4 +26,9 @@ class Solution:
         return sorted_list[k - 1]
         # def reverse(nums):
         
-        
+if __name__ == "__main__":
+    solution = Solution()
+    print(solution.findKthLargest([3,2,1,5,6,4], 2))  # Expected: 5
+    print(solution.findKthLargest([3,2,3,1,2,4,5,5,6], 4))  # Expected: 4
+    print(solution.findKthLargest([1], 1))  # Expected: 1
+    print(solution.findKthLargest([2,1], 1))  # Expected: 2
