@@ -32,3 +32,11 @@ print(solution.findKthLargest([3,2,1,5,6,4], 2))  # Expected: 5
 print(solution.findKthLargest([3,2,3,1,2,4,5,5,6], 4))  # Expected: 4
 print(solution.findKthLargest([1], 1))  # Expected: 1
 print(solution.findKthLargest([2,1], 1))  # Expected: 2
+
+# ...existing code...
+
+print(solution.findKthLargest([7, 10, 4, 3, 20, 15], 3))  # Expected: 10
+print(solution.findKthLargest([5, 5, 5, 5, 5], 4))        # Expected: 5
+print(solution.findKthLargest([-1, -2, -3, -4, -5], 2))   # Expected: -2
+print(solution.findKthLargest([100, 99, 98, 97, 96], 5))  # Expected: 96
+print(solution.findKthLargest([2, 1], 2))                 # Expected: 1
