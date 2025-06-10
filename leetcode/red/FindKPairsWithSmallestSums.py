@@ -5,7 +5,7 @@ class Solution:
     def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
         # heap and visited set to ensure we dont go to the same index twice
 
-        # heap - store the sume and the indices
+        # heap - store the sum and the indices
         heap = [[nums1[0] + nums2[0], 0, 0]]
         res = []
         visited = set((0,0))     
