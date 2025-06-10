@@ -37,3 +37,22 @@ class MedianFinder:
 # obj = MedianFinder()
 # obj.addNum(num)
 # param_2 = obj.findMedian()
+
+
+# ...existing code...
+
+if __name__ == "__main__":
+    mf = MedianFinder()
+    mf.addNum(1)
+    print("Median after adding 1:", mf.findMedian())  # Expected: 1
+
+    mf.addNum(2)
+    print("Median after adding 2:", mf.findMedian())  # Expected: 1.5
+
+    mf.addNum(3)
+    print("Median after adding 3:", mf.findMedian())  # Expected: 2
+
+    mf2 = MedianFinder()
+    for num in [5, 15, 1, 3]:
+        mf2.addNum(num)
+    print("Median after adding [5, 15, 1, 3]:", mf2.findMedian())  # Expected: 4.0
