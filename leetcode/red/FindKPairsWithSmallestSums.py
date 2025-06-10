@@ -1,3 +1,6 @@
+import heapq
+from typing import List
+
 class Solution:
     def kSmallestPairs(self, nums1: List[int], nums2: List[int], k: int) -> List[List[int]]:
         # heap and visited set to ensure we dont go to the same index twice
