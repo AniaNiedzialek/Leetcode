@@ -11,19 +11,23 @@ class Solution:
         visited = set((0,0))     
         # case 1 - heap true and k > 0
         while heap and k > 0:
-            _, i1, i2 = heappop(heap)
+            _, i1, i2 = heapq.heappop(heap)
             res.append([nums1[i1], nums2[i2]])
             k -= 1
             # check before adding next values
             next_i = i1 + 1
             if next_i < len(nums1) and (next_i, i2) not in visited:
-                heappush(heap, [nums1[next_i] + nums2[i2], next_i, i2])                
+                heapq.heappush(heap, [nums1[next_i] + nums2[i2], next_i, i2])                
                 visited.add((next_i, i2))
             next_i = i2 + 1
             if next_i < len(nums2) and (i1, next_i) not in visited:
-                heappush(heap, [nums1[i1] + nums2[next_i], i1, next_i])
+                heapq.heappush(heap, [nums1[i1] + nums2[next_i], i1, next_i])
                 visited.add((i1, next_i))
         return res
 
 # time: O min(k log k (n1 + n2) * log(n1 + n2))
 # space: O min(k, n1 * n2)
+
+solution = Solution()
+
+print(solution.kSmallestPairs([1,7,11], [2,4,6], 3))  # Expected: [[1,2],[1,4],[1,6]]
