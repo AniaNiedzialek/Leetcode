@@ -15,3 +15,6 @@ class Solution:
                 res = i + 1
         
         return res
+    
+solution = Solution()
+print(solution.canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))  # Expected: 3
