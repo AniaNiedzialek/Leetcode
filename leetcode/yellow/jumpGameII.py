@@ -14,3 +14,7 @@ class Solution:
                 end = far
 
         return smallest
+
+solution = Solution()
+
+print(solution.jump([2,3,1,1,4]))  # Expected: 2
