@@ -36,3 +36,8 @@ class RandomizedSet:
 # param_3 = obj.getRandom()
 
 solution = RandomizedSet()
+print(solution.insert(1))  # Expected: True
+print(solution.remove(2))  # Expected: False
+print(solution.insert(2))  # Expected: True
+print(solution.getRandom())  # Expected: 1 or 2
+print(solution.remove(1))  # Expected: True 
