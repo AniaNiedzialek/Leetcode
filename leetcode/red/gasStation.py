@@ -17,4 +17,9 @@ class Solution:
         return res
     
 solution = Solution()
-print(solution.canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))  # Expected: 3
+print(solution.canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]))  # Expected: 3 
+print(solution.canCompleteCircuit([2,3,4], [3,4,3]))  # Expected: -1                
+print(solution.canCompleteCircuit([5,1,2,3,4], [4,4,1,5,1]))  # Expected: 4
+print(solution.canCompleteCircuit([1,2,3,4], [2,3,4,3]))  # Expected: 0
+print(solution.canCompleteCircuit([1,2,3], [2,3,4]))  # Expected: -1            
+    
