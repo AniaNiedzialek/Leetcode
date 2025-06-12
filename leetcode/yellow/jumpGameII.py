@@ -18,3 +18,4 @@ class Solution:
 solution = Solution()
 
 print(solution.jump([2,3,1,1,4]))  # Expected: 2
+print(solution.jump([1]))  # Expected: 2
