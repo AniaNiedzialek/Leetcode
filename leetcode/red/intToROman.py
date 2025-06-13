@@ -24,3 +24,8 @@ class Solution:
                 result += roman
                 num -= val
         return result
+solution = Solution()
+
+print(solution.intToRoman(3))    # Expected: "III"                  
+
+print(solution.intToRoman(4))    # Expected: "IV"
