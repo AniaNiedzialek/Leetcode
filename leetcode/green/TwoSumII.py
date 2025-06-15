@@ -12,3 +12,7 @@ class Solution:
                 l += 1
             else:
                 r -= 1
+
+
+solution = Solution()
+print(solution.twoSum([2, 7, 11, 15], 9))  # Output: [1, 2]
