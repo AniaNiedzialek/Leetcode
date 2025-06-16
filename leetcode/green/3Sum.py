@@ -42,3 +42,7 @@ class Solution:
 
 solution = Solution()
 print(solution.threeSum([-1, 0, 1, 2, -1, -4]))  # Output: [[-1, -1, 2], [-1, 0, 1]]
+print(solution.threeSum([0, 1, 1]))  # Output: []
+print(solution.threeSum([0, 0, 0]))  # Output: [[0, 0, 0]]
+print(solution.threeSum([-2, 0, 1, 1, 2]))  # Output: [[-2, 0, 2], [-2, 1, 1]]
+print(solution.threeSum([-4, -2, 1, 2, 3, 5]))  # Output: [[-4, 1, 3], [-2, -2, 4]]             
