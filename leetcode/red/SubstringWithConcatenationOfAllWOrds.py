@@ -1,11 +1,12 @@
 from typing import List
+import collections
 
 class Solution:
     def findSubstring(self, s: str, words: List[str]) -> List[int]:
         n = len(s)
         k = len(words)
 
-        word_length  = len(words[0])
+        word_length = len(words[0])
         substring_size = word_length * k
         word_count = collections.Counter(words)
 
@@ -21,8 +22,10 @@ class Solution:
                 else:
                     break
             return words_used == k
+
         answer = []
         for i in range(n - substring_size + 1):
             if check(i):
                 answer.append(i)
+
         return answer
