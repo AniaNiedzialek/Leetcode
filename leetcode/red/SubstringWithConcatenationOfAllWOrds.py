@@ -29,3 +29,7 @@ class Solution:
                 answer.append(i)
 
         return answer
+solution = Solution()
+print(solution.findSubstring("barfoothefoobarman", ["foo", "bar"]))  # Output: [0, 9]
+print(solution.findSubstring("wordgoodgoodgoodbestword", ["word", "good", "best", "word"]))  # Output: []
+print(solution.findSubstring("barfoofoobarthefoobarman", ["bar", "foo", "the"]))  # Output: [6, 9, 12]          
