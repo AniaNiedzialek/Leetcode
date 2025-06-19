@@ -5,10 +5,10 @@ class Solution:
         stack = []
         cur = ""
         
-        for i in path:
+        for i in path + "/":
             
             # case 1 - if the character is a slash
-            if c == "/":
+            if i == "/":
                 # subcase 1 - if the current string is not empty
                 if cur == "..":
                     if stack:
@@ -16,9 +16,13 @@ class Solution:
                 # subcase 2 - if the current string is empty or a dot
                 elif cur != "" and cur != ".":
                     stack.append(cur)
+                cur =""
             # case 2 - otherwise
             else:
                 cur += i
                 
         return  "/" + "/".join(stack)
             
+# test cases
+solution = Solution()
+print(solution.simplifyPath("/home/"))
