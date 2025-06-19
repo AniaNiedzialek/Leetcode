@@ -26,3 +26,8 @@ class Solution:
 # test cases
 solution = Solution()
 print(solution.simplifyPath("/home/"))
+print(solution.simplifyPath("/../"))
+print(solution.simplifyPath("/home//foo/"))
+print(solution.simplifyPath("/a/./b/../../c/"))
+print(solution.simplifyPath("/a/../../b/../c//.//"))
+print(solution.simplifyPath("/a//b////c/d//././/.."))   
