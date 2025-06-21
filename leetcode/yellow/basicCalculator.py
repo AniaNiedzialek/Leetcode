@@ -20,13 +20,18 @@ class Solution:
                 stack.append(res)
                 stack.append(sign)
                 sign = 1
-                res = 1
+                res = 0
             elif c == ")":
                 res += sign * cur
                 res *= stack.pop()
                 res += stack.pop()
                 cur = 0
         return res + sign * cur
-                
+# test cases
+solution = Solution()
+print(solution.calcualte("1 + 1"))  # Output: 2
+print(solution.calcualte(" 2-1 + 2 "))  # Output: 3
+print(solution.calcualte("(1+(4+5+2)-3)+(6+8)"))  # Output: 23
+print(solution.calcualte("2-(5-6)"))  # Output: 3           
                 
 
