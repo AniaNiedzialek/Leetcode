@@ -31,4 +31,8 @@ class Solution:
             r -= 1
             l += 1
 
-            
+# test cases:
+solution = Solution()
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+solution.rotate(matrix)
+print(matrix)  # Output: [[7,4,1],[8,5,2],[9,6,3]]
