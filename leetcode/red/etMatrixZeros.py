@@ -35,3 +35,13 @@ class Solution:
 
 
 
+
+# test cases
+solution = Solution()
+matrix = [[1,1,1],[1,0,1],[1,1,1]]
+solution.setZeroes(matrix)
+print(matrix)  # Output: [[1,0,1],[0,0,0],[1,0,1]]
+
+matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+solution.setZeroes(matrix)
+print(matrix)  # Output: [[0,0,0,0],[3,4,5,0],[0,3,0,5]]
