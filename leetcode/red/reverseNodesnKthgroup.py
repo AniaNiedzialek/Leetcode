@@ -16,7 +16,7 @@ class Solution:
                 break
             groupNext = kth.next
 
-            # rever group 2 pointers
+            # reverse group 2 pointers
             prev, cur = kth.next, groupPrev.next
 
             while cur != groupNext:
@@ -37,3 +37,13 @@ class Solution:
             k -= 1
 
         return cur
+
+# test case
+solution = Solution()
+head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+k = 2
+result = solution.reverseKGroup(head, k)
+while result:
+    print(result.val, end=" -> ")
+    result = result.next
+print("None")
