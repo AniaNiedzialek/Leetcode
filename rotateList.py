@@ -70,4 +70,17 @@ if __name__ == "__main__":
     result2 = solution.rotateRight(head2, 4)
     print_linked_list(result2)  # Expected: [2, 0, 1]
 
-    
+    # Test case 3: Rotate [1,2] by 0 -> [1,2]
+    head3 = ListNode(1, ListNode(2))
+    result3 = solution.rotateRight(head3, 0)
+    print_linked_list(result3)  # Expected: [1, 2]
+
+    # Test case 4: Rotate [1] by 99 -> [1]
+    head4 = ListNode(1)
+    result4 = solution.rotateRight(head4, 99)
+    print_linked_list(result4)  # Expected: [1]
+
+    # Test case 5: Rotate [] by 1 -> []
+    head5 = None
+    result5 = solution.rotateRight(head5, 1)
+    print_linked_list(result5)  # Expected: []
