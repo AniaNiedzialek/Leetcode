@@ -46,4 +46,28 @@ class Solution:
         tail.next = head
       
         return tmp2
+# test cases
 
+# ...existing code...
+
+def print_linked_list(head):
+    vals = []
+    while head:
+        vals.append(head.val)
+        head = head.next
+    print(vals)
+
+if __name__ == "__main__":
+    solution = Solution()
+
+    # Test case 1: Rotate [1,2,3,4,5] by 2 -> [4,5,1,2,3]
+    head1 = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+    result1 = solution.rotateRight(head1, 2)
+    print_linked_list(result1)  # Expected: [4, 5, 1, 2, 3]
+
+    # Test case 2: Rotate [0,1,2] by 4 -> [2,0,1]
+    head2 = ListNode(0, ListNode(1, ListNode(2)))
+    result2 = solution.rotateRight(head2, 4)
+    print_linked_list(result2)  # Expected: [2, 0, 1]
+
+    
