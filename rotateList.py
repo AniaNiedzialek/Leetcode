@@ -84,3 +84,7 @@ if __name__ == "__main__":
     head5 = None
     result5 = solution.rotateRight(head5, 1)
     print_linked_list(result5)  # Expected: []
+
+    head6 = ListNode(0, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+    result6 = solution.rotateRight(head6, 3)
+    print_linked_list(result6)  # Expected: [3, 4, 5, 0, 2]
