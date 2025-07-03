@@ -19,3 +19,9 @@ class Solution:
                 res = max(res, count[slope] + 1)
 
         return res
+
+
+# test cases
+solution = Solution()
+print(solution.maxPoints([[1, 1], [2, 2], [3, 3]]))  # Expected: 3
+print(solution.maxPoints([[1, 1], [3, 2], [5, 3], [4, 1], [     2, 3], [1, 4]]))  # Expected: 4 
