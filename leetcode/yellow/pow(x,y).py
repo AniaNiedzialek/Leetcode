@@ -13,6 +13,13 @@ class Solution:
             if n % 2 == 1:
                 result *= x 
             x *= x     
-            n -= 1
+            n //= 2
     
         return result
+    
+# test cases
+solution = Solution()
+print(solution.myPow(2.00000, 10))  # Expected: 1024.00000
+print(solution.myPow(2.10000, 3))   # Expected: 9.26100
+print(solution.myPow(2.00000, -2))  # Expected: 0.25000
+print(solution.myPow(2.0, 3))  # Expected: 8.0 
