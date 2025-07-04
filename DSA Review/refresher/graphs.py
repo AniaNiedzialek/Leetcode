@@ -25,14 +25,60 @@ from collections import defaultdict
 D = defaultdict(list)
 
 for u, v in A:
-    # D[u].append(v)
-    
     D[u].append(v)
+    
+    # D[u].append(v)
 
 print(D)
 
 print(D[3])
 print(M[3])
 
+# DFS with recursion  - O(V + E) where V is numbers of nodes and E is number oF edges
 
-# undirected graph
+def dfs_recursive(node):
+    print(node)
+    for nei_node in D[node]:
+        if nei_node not in seen:
+            seen.add(nei_node)
+            dfs_recursive(nei_node)
+
+source = 0
+seen = set()
+seen.add(source)
+dfs_recursive(source)
+
+
+# dfs with stack
+source = 0
+seen = set()
+seen.add(source)
+stack = [source] 
+
+while stack:
+    node = stack.pop()
+    print(node)
+    for nei_node in D[node]:
+        if nei_node not in seen:
+            seen.add(nei_node)
+            stack.append(nei_node)
+            
+            
+# BFS  with queue
+
+source = 0
+
+from collections import deque
+seen = set()
+seen.add(source)
+q = deque()
+q.append(source)
+
+while q:
+    node = q.popleft()
+    print(node)
+    for nei_node in D[node]:
+        if nei_node not in seen:
+            seen.add(nei_node)
+            q.append(nei_node)
+
