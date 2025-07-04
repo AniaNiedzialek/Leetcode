@@ -13,5 +13,26 @@ for i in range(n):
 # print(M)
 
 for u, v in A:
+    # for directed graph
     M[u][v] = 1
-print(M)
+    # for undirected graph
+    # M[v][u] = 1
+# print(M)
+
+# convert array of edges to adjacency list
+from collections import defaultdict
+
+D = defaultdict(list)
+
+for u, v in A:
+    # D[u].append(v)
+    
+    D[u].append(v)
+
+print(D)
+
+print(D[3])
+print(M[3])
+
+
+# undirected graph
