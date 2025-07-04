@@ -82,3 +82,27 @@ while q:
             seen.add(nei_node)
             q.append(nei_node)
 
+# class
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.neighbors = []  # fixed typo: was 'neighors'
+    
+    def __str__(self):
+        return f'Node({self.value})'  # fixed typo: was 'valeue'
+
+    def display(self):
+        connections = [node.value for node in self.neighbors]
+        return f'{self.value} is connected to {connections}'
+
+A = Node('A')
+B = Node('B')
+C = Node('C')       
+D = Node('D')
+
+A.neighbors.append(B)  # fixed typo: was 'neighors'
+B.neighbors.append(D)
+C.neighbors.append(D) 
+D.neighbors.append(C)
+
+print(A.display())  # Output: A is connected to ['B']
