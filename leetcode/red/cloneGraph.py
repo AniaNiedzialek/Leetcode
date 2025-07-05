@@ -30,3 +30,8 @@ class Solution():
                 copy.neighbors.append(dfs(nei))
             return copy
         return dfs(node) if node else None
+    
+# test cases
+solution = Solution()
+# case1 = [[2,4],[1,3],[2,4],[1,3]]
+print(solution.cloneGraph([[2,4],[1,3],[2,4],[1,3]]))
