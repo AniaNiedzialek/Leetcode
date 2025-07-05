@@ -1,7 +1,7 @@
 from typing import Optional
 
 class Node:
-    def __init__(self, val =0, neighbors=0):
+    def __init__(self, val =0, neighbors=None):
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
         
@@ -31,7 +31,18 @@ class Solution():
             return copy
         return dfs(node) if node else None
     
+def build_graph(adj_list):
+    if not adj_list:
+        return None
+    nodes = [Node(i+1) for i in range(len(adj_list))]
+    for idx, neighbors in enumerate(adj_list):
+        nodes[idx].neighbors = [nodes[n-1] for n in neighbors]
+    return nodes[0]
+
 # test cases
 solution = Solution()
 # case1 = [[2,4],[1,3],[2,4],[1,3]]
-print(solution.cloneGraph([[2,4],[1,3],[2,4],[1,3]]))
+adj_list = [[2,4],[1,3],[2,4],[1,3]]
+root = build_graph(adj_list)
+cloned = solution.cloneGraph(root)
+print(cloned.val)  # Should print 1 (the value of the root node)
