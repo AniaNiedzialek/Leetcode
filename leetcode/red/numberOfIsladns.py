@@ -50,3 +50,13 @@ class Solution:
                     # if islands was not visited
                     islands += 1
         return islands
+        
+# test cases
+solution = Solution()   
+print(solution.numIslands([["1", "1", "0", "0", "0"]]))    # Expected: 1
+
+
+
+
+
+
