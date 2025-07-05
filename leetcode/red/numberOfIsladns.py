@@ -28,6 +28,8 @@ class Solution:
             while q:
                 # expand the island
                 row, col = q.popleft()
+                # for dfs
+                # row, col = q.pop()
                 directions = [[1, 0], [-1, 0], [0, 1], [0,-1]]
                 for dr, dc in directions:
                     r, c = row + dr, col + dc
