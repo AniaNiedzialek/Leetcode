@@ -56,6 +56,7 @@ class Solution():
             
 # test cases
 solution = Solution()
+
 board1 = [["X"]]
 solution.solve(board1) # Expected: [X]
 print(board1)
@@ -67,3 +68,11 @@ print(board2)
 board3 = [["X", "X", "O", "X"], ["X", "X", "X", "X"], ["X", "O", "O", "X"], ["X", "X", "X", "X"]] # Expected: all X except first row
 solution.solve(board3)
 print(board3)
+
+board4 = [[""]]
+solution.solve(board4) # Expected: [""]
+print(board4)
+
+board5 = [["O"]]
+solution.solve(board5) # Expected: ["O"]
+print(board5)
