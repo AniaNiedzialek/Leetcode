@@ -60,7 +60,10 @@ board1 = [["X"]]
 solution.solve(board1) # Expected: [X]
 print(board1)
 
-board2 = [["X", "X", "O"], ["O", "O", "X"]] # Expected: 0
+board2 = [["X", "X", "O"], ["O", "O", "X"]] # Expected: unchanged
 solution.solve(board2)
 print(board2)
 
+board3 = [["X", "X", "O", "X"], ["X", "X", "X", "X"], ["X", "O", "O", "X"], ["X", "X", "X", "X"]] # Expected: all X except first row
+solution.solve(board3)
+print(board3)
