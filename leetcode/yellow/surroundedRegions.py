@@ -54,4 +54,9 @@ class Solution():
                     board[r][c] = "X"
                     
             
-                
+# test cases
+solution = Solution()
+board1 = [["X"]]
+solution.solve(board1) # Expected: [X]
+print(board1)
+
