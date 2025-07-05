@@ -54,6 +54,9 @@ class Solution:
 # test cases
 solution = Solution()   
 print(solution.numIslands([["1", "1", "0", "0", "0"]]))    # Expected: 1
+print(solution.numIslands([["1", "1", "0", "0", "0"], ["1", "1", "0", "0", "0"], ["0", "0", "1", "0", "0"], ["0", "0", "0", "1", "1"]]))  # Expected: 3
+print(solution.numIslands([["1", "1", "1", "1", "0"], ["1", "0", "0", "1", "0"], ["1", "1", "0", "0", "0"], ["0", "0", "0", "0", "0"], ["0", "1", "1", "1", "1"]]))  # Expected: 2
+
 
 
 
