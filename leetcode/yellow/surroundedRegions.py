@@ -60,3 +60,7 @@ board1 = [["X"]]
 solution.solve(board1) # Expected: [X]
 print(board1)
 
+board2 = [["X", "X", "O"], ["O", "O", "X"]] # Expected: 0
+solution.solve(board2)
+print(board2)
+
