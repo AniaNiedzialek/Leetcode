@@ -46,3 +46,17 @@ adj_list = [[2,4],[1,3],[2,4],[1,3]]
 root = build_graph(adj_list)
 cloned = solution.cloneGraph(root)
 print(cloned.val)  # Should print 1 (the value of the root node)
+
+# Print original and cloned root node values and ids
+print("Original root val:", root.val, "id:", id(root))
+print("Cloned root val:", cloned.val, "id:", id(cloned))
+
+# Check neighbors of root
+print("Original neighbors:", [n.val for n in root.neighbors])
+print("Cloned neighbors:", [n.val for n in cloned.neighbors])
+print("Original neighbor ids:", [id(n) for n in root.neighbors])
+print("Cloned neighbor ids:", [id(n) for n in cloned.neighbors])
+
+# Check that the objects are different
+print("Root nodes are different objects:", root is not cloned)
+print("First neighbor nodes are different objects:", root.neighbors[0] is not cloned.neighbors[0])
