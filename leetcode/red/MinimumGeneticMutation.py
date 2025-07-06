@@ -67,3 +67,9 @@ if __name__ == "__main__":
     end6 = "AAAAACCC"
     bank6 = ["AAAACCCC", "AAACCCCC", "AACCCCCC"]
     print(solution.minMutation(start6, end6, bank6))  # Expected: 0
+    
+    # Test case 7: Bank is empty
+    start7 = "AACCGGTT"
+    end7 = "AACCGGTA"
+    bank7 = []
+    print(solution.minMutation(start7, end7, bank7))  # Expected: -1
