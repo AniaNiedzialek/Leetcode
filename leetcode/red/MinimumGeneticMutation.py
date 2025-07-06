@@ -73,3 +73,9 @@ if __name__ == "__main__":
     end7 = "AACCGGTA"
     bank7 = []
     print(solution.minMutation(start7, end7, bank7))  # Expected: -1
+
+ # Test case 8: Multiple possible paths, shortest required
+    start8 = "AAAAACCC"
+    end8 = "AACCCCCC"
+    bank8 = ["AAAACCCC", "AAACCCCC", "AACCCCCC", "AAAACCCA", "AAACCCCA"]
+    print(solution.minMutation(start8, end8, bank8))  # Expected: 3
