@@ -5,6 +5,8 @@ from collections import deque
 class Solution:
     def snakesAndLadders(self, board: List[List[int]]) -> int:
         length = len(board)
+        if length == 1:
+            return 0
         # reverse the board
         board.reverse()
 
