@@ -47,7 +47,7 @@ class Solution:
             
 # test cases
 sol = Solution()
-beginWord = 'hot'
+beginWord = 'hit'
 endWord = "cog"
 WordList = ["hot","dot","dog","lot","log","cog"]
 
