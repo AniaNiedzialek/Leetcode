@@ -4,16 +4,16 @@ import collections
 from collections import deque
 
 class Solution:
-    def ladderLength(self, beginWord: str, endWord: str, WordList: List[str]) -> int:
+    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         seen = set()
         
         # base case
-        if endWord not in WordList:
+        if endWord not in wordList:
             return 0
         
         def bfs(cur, step):
-            wordSet = set(WordList)
-            q = collections.dedque()
+            wordSet = set(wordList)
+            q = collections.deque()
             
             seen.add(cur)
             q.append((cur, step))
@@ -39,9 +39,16 @@ class Solution:
                         # add the other case to the set and queue
                         if nei in wordSet and nei not in seen:
                             seen.add(nei)
-                            q.append((nei, step))
+                            q.append((nei, step + 1))
                             
             return 0
         return bfs(beginWord, 1)
                 
             
+# test cases
+sol = Solution()
+beginWord = 'hot'
+endWord = "cog"
+WordList = ["hot","dot","dog","lot","log","cog"]
+
+print(f"Tes Case 1: ", sol.ladderLength(beginWord, endWord, WordList)) # Expected: 5
