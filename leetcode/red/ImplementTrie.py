@@ -41,3 +41,20 @@ class Trie:
 # obj.insert(word)
 # param_2 = obj.search(word)
 # param_3 = obj.startsWith(prefix)
+
+# ...existing code...
+
+if __name__ == "__main__":
+    trie = Trie()
+    trie.insert("apple")
+    print(trie.search("apple"))    # Expected: True
+    print(trie.search("app"))      # Expected: False
+    print(trie.startsWith("app"))  # Expected: True
+    trie.insert("app")
+    print(trie.search("app"))      # Expected: True
+    print(trie.startsWith("appl")) # Expected: True
+    print(trie.startsWith("banana")) # Expected: False
+    trie.insert("banana")
+    print(trie.search("banana"))   # Expected: True
+    print(trie.search("ban"))      # Expected: False
+    print(trie.startsWith("ban"))  # Expected: True
