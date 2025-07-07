@@ -20,7 +20,7 @@ class Solution:
             
             while q:
                 # pop from the queue to get the current element and # of steps
-                cur, steps = q.popleft()
+                cur, step = q.popleft()
                 
                 # check the cur against possible letters
                 for i in range(len(cur)):
@@ -34,7 +34,7 @@ class Solution:
                         
                         # check if found solution
                         if nei == endWord:
-                            return steps + 1
+                            return step + 1
                         
                         # add the other case to the set and queue
                         if nei in wordSet and nei not in seen:
@@ -51,4 +51,9 @@ beginWord = 'hot'
 endWord = "cog"
 WordList = ["hot","dot","dog","lot","log","cog"]
 
-print(f"Tes Case 1: ", sol.ladderLength(beginWord, endWord, WordList)) # Expected: 5
+print(f"Test Case 1: ", sol.ladderLength(beginWord, endWord, WordList)) # Expected: 5
+
+beg1 = "lost"
+end1 = "miss"
+word = ["most","mist","miss","lost","fist","fish"]
+print(f"Test Case 2: ", sol.ladderLength(beg1, end1, word)) # expected: 4
