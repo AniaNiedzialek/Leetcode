@@ -41,3 +41,40 @@ class WordDictionary:
 # param_2 = obj.search(word)
 
 # test cases
+
+
+# ...existing code...
+
+if __name__ == "__main__":
+    wd = WordDictionary()
+    wd.addWord("bad")
+    wd.addWord("dad")
+    wd.addWord("mad")
+    print(wd.search("pad"))    # Expected: False
+    print(wd.search("bad"))    # Expected: True
+    print(wd.search(".ad"))    # Expected: True
+    print(wd.search("b.."))    # Expected: True
+    print(wd.search("b.d"))    # Expected: True
+    print(wd.search("..d"))    # Expected: True
+    print(wd.search("..."))    # Expected: True
+    print(wd.search("...."))   # Expected: False
+    wd.addWord("b")
+    print(wd.search("b"))      # Expected: True
+    print(wd.search("."))      # Expected: True
+
+if __name__ == "__main__":
+    wd = WordDictionary()
+    wd.addWord("bad")
+    wd.addWord("dad")
+    wd.addWord("mad")
+    print(wd.search("pad"))    # Expected: False
+    print(wd.search("bad"))    # Expected: True
+    print(wd.search(".ad"))    # Expected: True
+    print(wd.search("b.."))    # Expected: True
+    print(wd.search("b.d"))    # Expected: True
+    print(wd.search("..d"))    # Expected: True
+    print(wd.search("..."))    # Expected: True
+    print(wd.search("...."))   # Expected: False
+    wd.addWord("b")
+    print(wd.search("b"))      # Expected: True
+    print(wd.search("."))      # Expected: True
