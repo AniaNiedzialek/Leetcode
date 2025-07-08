@@ -56,3 +56,8 @@ sol = Solution()
 board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]]
 words = ["oath","pea","eat","rain"]
 print(f"Test Case 1: ", sol.findWords(board, words))
+
+board1 = [["a","g", "a", "l"],["m","b","r","o"],["z","u","t","k"],["i","f","l","e"]]
+words1 = ["art","broke","eat","zoom"]
+print(f"Test Case 1: ", sol.findWords(board1, words1))
+
