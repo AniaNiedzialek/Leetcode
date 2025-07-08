@@ -49,3 +49,10 @@ class Solution:
                 dfs(r, c, root)
 
         return result
+    
+    
+# test case
+sol = Solution()
+board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]]
+words = ["oath","pea","eat","rain"]
+print(f"Test Case 1: ", sol.findWords(board, words))
