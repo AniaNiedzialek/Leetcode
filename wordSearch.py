@@ -61,3 +61,8 @@ print(f"Test Case 1: ", sol.exist(board, word))
 board2 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
 word2 = "SEE"
 print(f"Test Case 2: ", sol.exist(board2, word2))
+
+# 3
+board3 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+word3 = "ABCB"
+print(f"Test Case 3: ", sol.exist(board3, word3))
