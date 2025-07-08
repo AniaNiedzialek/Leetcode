@@ -51,4 +51,6 @@ class Solution():
 # test cases
 
 sol = Solution()
-board = []
+board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+word = "ABCCED"
+print(f"Test Case 1: ", sol.exist(board, word))
