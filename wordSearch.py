@@ -47,3 +47,8 @@ class Solution():
                 if dfs(r,c, 0):
                     return True
         return False
+    
+# test cases
+
+sol = Solution()
+board = []
