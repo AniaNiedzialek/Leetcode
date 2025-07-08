@@ -55,3 +55,9 @@ sol = Solution()
 board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
 word = "ABCCED"
 print(f"Test Case 1: ", sol.exist(board, word))
+
+# 2
+
+board2 = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+word2 = "SEE"
+print(f"Test Case 2: ", sol.exist(board2, word2))
