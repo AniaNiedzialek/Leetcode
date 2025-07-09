@@ -32,3 +32,11 @@ print("Test Case 1: ", sol.combine(n, k))
 n = 5
 k = 2
 print("Test Case 1: ", sol.combine(n, k))
+# comment:
+# # why do we pop from the combination?
+# Add i to the current combination.
+
+# Explore all combinations that start with this updated comb.
+
+# Then remove i to go back to the previous state, so the next loop iteration can try the next number.
+
