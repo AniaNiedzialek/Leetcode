@@ -31,3 +31,11 @@ a = "11"
 b = "11"
 print(f"Test Case 2: ", sol.addBinary(a,b))
 
+a= "0"
+b = "0"
+print(f"Test Case 3: ", sol.addBinary(a,b))
+
+a = "111111111"
+b = "1"
+print(f"Test Case 4: ", sol.addBinary(a,b))
+
