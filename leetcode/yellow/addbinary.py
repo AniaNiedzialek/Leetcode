@@ -27,3 +27,7 @@ a = "10"
 b = "1"
 print(f"Test Case 1: ", sol.addBinary(a, b))
 
+a = "11"
+b = "11"
+print(f"Test Case 2: ", sol.addBinary(a,b))
+
