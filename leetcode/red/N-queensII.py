@@ -30,3 +30,14 @@ class Solution:
 
         back(0)
         return res
+
+
+# test cases
+sol = Solution()
+n = 4
+
+print(f"Test Case 1: ", sol.totalNQueens(n))
+
+# 2
+n1= 1
+print(f"Test Case 2: ", sol.totalNQueens(n1))
