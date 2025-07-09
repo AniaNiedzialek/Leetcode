@@ -44,3 +44,7 @@ print("Test Case 2: ", sol.letterCombinations(digits2) )
 # 3 
 digits3 = ""
 print("Test Case 3: ", sol.letterCombinations(digits3))
+
+# 4 
+digits4 = "2345679"
+print("Test Case 3: ", sol.letterCombinations(digits4))
