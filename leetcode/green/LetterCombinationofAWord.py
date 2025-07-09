@@ -32,3 +32,7 @@ class Solution():
             
         return res
         
+# test cases
+sol = Solution()
+digits = "23"
+print("Test Case 1: ", sol.letterCombinations(digits))
