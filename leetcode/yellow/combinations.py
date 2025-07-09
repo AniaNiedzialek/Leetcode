@@ -27,3 +27,8 @@ sol = Solution()
 n = 4
 k = 2
 print("Test Case 1: ", sol.combine(n, k))
+
+# 2
+n = 5
+k = 2
+print("Test Case 1: ", sol.combine(n, k))
