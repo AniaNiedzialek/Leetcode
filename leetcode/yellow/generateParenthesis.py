@@ -28,3 +28,6 @@ class Solution:
 sol = Solution()
 n = 3
 print(f"Test Case 1 ", sol.generateParenthesis(n))
+
+n1 = 1
+print(f"Test Case 2: ", sol.generateParenthesis(n1))
