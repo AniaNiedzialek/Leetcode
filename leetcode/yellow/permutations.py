@@ -27,4 +27,9 @@ class Solution:
         back([], [False] * len(nums))
         return res
     
+# test cases
+sol = Solution()
+nums = [1,2,3]
+print("Test Case 1: ", sol.permute(nums))
+    
     
