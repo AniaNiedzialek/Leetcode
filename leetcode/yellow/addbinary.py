@@ -21,4 +21,9 @@ class Solution:
             res = "1" + res
         return res
 
+# test cases
+sol = Solution()
+a = "10"
+b = "1"
+print(f"Test Case 1: ", sol.addBinary(a, b))
 
