@@ -36,3 +36,11 @@ class Solution():
 sol = Solution()
 digits = "23"
 print("Test Case 1: ", sol.letterCombinations(digits))
+
+# 2
+digits2 = "9"
+print("Test Case 2: ", sol.letterCombinations(digits2) )
+
+# 3 
+digits3 = ""
+print("Test Case 3: ", sol.letterCombinations(digits3))
