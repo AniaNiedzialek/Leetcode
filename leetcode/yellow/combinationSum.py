@@ -22,3 +22,9 @@ class Solution:
 
         back(0, [], target)
         return res
+    
+# test cases
+sol = Solution()
+target = 7
+candidates = [2,3,6,7]
+print(f"Test Case 1: ", sol.combinationSum(candidates, target))
