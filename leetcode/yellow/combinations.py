@@ -21,3 +21,9 @@ class Solution:
                 
         back(1, [])
         return res
+    
+# test cases
+sol = Solution()
+n = 4
+k = 2
+print("Test Case 1: ", sol.combine(n, k))
