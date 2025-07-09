@@ -22,3 +22,9 @@ class Solution:
 
         back(0, 0)
         return res
+    
+    
+# test cases:
+sol = Solution()
+n = 3
+print(f"Test Case 1 ", sol.generateParenthesis(n))
