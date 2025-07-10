@@ -14,4 +14,25 @@ class Solution:
         if res >= 2**31:
             res -= 2**32
         return res
- 
+    
+    
+# test cases
+
+ # ...existing code...
+
+if __name__ == "__main__":
+    solution = Solution()
+    # Test case 1: Positive numbers
+    print(solution.singleNumber([2,2,3,2]))  # Expected: 3
+
+    # Test case 2: Negative number
+    print(solution.singleNumber([0,1,0,1,0,1,-99]))  # Expected: -99
+
+    # Test case 3: Single element
+    print(solution.singleNumber([7]))  # Expected: 7
+
+    # Test case 4: All numbers are the same except one
+    print(solution.singleNumber([5,5,5,8]))  # Expected: 8
+
+    # Test case 5: Larger array with negative unique
+    print(solution.singleNumber([-2,-2,-2,-7]))  # Expected: -7
