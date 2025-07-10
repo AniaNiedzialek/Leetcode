@@ -16,3 +16,23 @@ class Solution:
 
 
         return res
+    
+# test cases
+# ...existing code...
+
+if __name__ == "__main__":
+    solution = Solution()
+    # Test case 1: Range with common prefix
+    print(solution.rangeBitwiseAnd(5, 7))  # Expected: 4
+
+    # Test case 2: Range with no common bits
+    print(solution.rangeBitwiseAnd(0, 1))  # Expected: 0
+
+    # Test case 3: Single number
+    print(solution.rangeBitwiseAnd(3, 3))  # Expected: 3
+
+    # Test case 4: Large range
+    print(solution.rangeBitwiseAnd(1, 2147483647))  # Expected: 0
+
+    # Test case 5: Range with all bits set
+    print(solution.rangeBitwiseAnd(7, 15))  # Expected: 0
