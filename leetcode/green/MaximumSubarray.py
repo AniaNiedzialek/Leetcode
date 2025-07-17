@@ -2,7 +2,7 @@ from typing import List
 
 class Solution:
     def maxSubarry(self, nums: List[str]) -> List[str]:
-        max_sum = flaot("-inf")
+        max_sum = float("-inf")
         cur_sum = 0
 
         for n in nums:
