@@ -1,9 +1,9 @@
 from typing import List
 
 class Solution:
-    def maxSub(self, nums: List[int]) -> int:
+    def maxSubarraySumCircular(self, nums: List[int]) -> int:
         total = 0
-        max_cur, min_cur, max_sum, min_sum = nums[0]
+        cur_max = cur_min = max_sum = min_sum = nums[0]
         for n in nums[1:]:
             cur_max = max(n, cur_max + n)
             max_sum = max(max_sum, cur_max)
