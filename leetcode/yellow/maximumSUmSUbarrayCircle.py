@@ -14,6 +14,8 @@ class Solution:
             total += n
         total += nums[0]
 
+
+        # If all numbers are negative, return the maximum single element to avoid returnuing zero
         if max_sum < 0:
             return max_sum
         else:
