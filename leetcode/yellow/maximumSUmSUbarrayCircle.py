@@ -18,3 +18,10 @@ class Solution:
             return max_sum
         else:
             return max(max_sum, total - min_sum)
+
+
+# test cases
+solution = Solution()
+nusm1 = [-3, -5, -3]
+print(f"Test Case 1: ", solution.maxSubarraySumCircular(nusm1)) # expected: -3
+        
