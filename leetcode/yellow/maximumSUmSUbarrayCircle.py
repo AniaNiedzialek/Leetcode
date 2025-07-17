@@ -24,4 +24,12 @@ class Solution:
 solution = Solution()
 nusm1 = [-3, -5, -3]
 print(f"Test Case 1: ", solution.maxSubarraySumCircular(nusm1)) # expected: -3
+
+# test case 2
+nusm2 = [1, -2, 3, -2]
+print(f"Test Case 2: ", solution.maxSubarraySumCircular(nusm2)) # expected: 3
+
+# test case 3
+nusm3 = [5, -3, 5]
+print(f"Test Case 3: ", solution.maxSubarraySumCircular(nusm3)) # expected: 10
         
